@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: #8080805d;
+        }
+        table{
+            position: relative;
+            width:500px ;
+            border-collapse: collapse;
+        }
+        thead > tr> th{
+            position: sticky;
+            top: -1px;
+            background-color: #555353;
+
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: #555353;
+            color: white;
+        }
+        td.num{
+            text-align: right;
+            width: 100px;
+        }
+
+        caption{
+            font-size: 1.5em;
+            background-color: rgba(175, 168, 168, 0.37);
+            padding: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--TABELAS GRANDES-->
+
+    <table>
+        <thead> <!--cabeça-->
+            <tr>
+                <th scope="col">Estado 🌐</th>  <!--TITULO-->
+                <th scope="col">Populaçao 👥</th>  
+            </tr>
+            
+        </thead>
+        <caption>
+           
+            População das Unidades Federativas 
+        </caption>
+        
+        <tbody> <!--corpo-->
+            <tr>
+                <td> São Paulo </td> <!--dados-->
+                <td class="num">45 973 190</td>
+            </tr>
+            <tr>
+                <td> Minas Gerais</td> <!--dados-->
+                <td class="num">21 322 692</td>
+            </tr>
+            <tr>
+                <td>  Rio de Janeiro</td> <!--dados-->
+                <td class="num">17 219 679</td>
+            </tr>
+            <tr>
+                <td> Bahia</td> <!--dados-->
+                <td class="num">14 850 513</td>
+            </tr>
+            <tr>
+                <td> Paraná</td> <!--dados-->
+                <td class="num">11 824 665</td>
+            </tr>
+            <tr>
+                <td> Rio Grande do Sul</td> <!--dados-->
+                <td class="num">11 229 915</td>
+            </tr>
+            <tr>
+                <td> Pernambuco</td> <!--dados-->
+                <td class="num">9 539 029</td>
+            </tr>
+            <tr>
+                <td> Ceará</td> <!--dados-->
+                <td class="num">9 233 656</td>
+            </tr>
+            <tr>
+                <td>Pará</td> <!--dados-->
+                <td class="num">8 664 306</td>
+            </tr>
+            <tr>
+                <td>  Santa Catarina</td> <!--dados-->
+                <td class="num">8 058 447</td>
+            </tr>
+            <tr>
+                <td>  Santa Catarina</td> <!--dados-->
+                <td class="num">8 058 447</td>
+            </tr>
+            <tr>
+                <td>  Santa Catarina</td> <!--dados-->
+                <td class="num">8 058 447</td>
+            </tr>
+            <tr>
+                <td>  Santa Catarina</td> <!--dados-->
+                <td class="num">8 058 447</td>
+            </tr>
+            <tr>
+                <td>  Santa Catarina</td> <!--dados-->
+                <td class="num">8 058 447</td>
+            </tr>
+            <tr>
+                <td>  Santa Catarina</td> <!--dados-->
+                <td class="num">8 058 447</td>
+            </tr><tr>
+                <td>  Santa Catarina</td> <!--dados-->
+                <td class="num">8 058 447</td>
+            </tr>
+            <tr>
+                <td>  Santa Catarina</td> <!--dados-->
+                <td class="num">8 058 447</td>
+            </tr><tr>
+                <td>  Santa Catarina</td> <!--dados-->
+                <td class="num">8 058 447</td>
+            </tr><tr>
+                <td>  Santa Catarina</td> <!--dados-->
+                <td class="num">8 058 447</td>
+            </tr>
+            <tr>
+                <td>  Santa Catarina</td> <!--dados-->
+                <td class="num">8 058 447</td>
+            </tr>
+            <tr>
+                <td>  Santa Catarina</td> <!--dados-->
+                <td class="num">8 058 447</td>
+            </tr>
+
+
+        </tbody>
+        <tfoot> <!--roda pé-->
+            <th scope="row"> Total de habitantes</th> <!--Titulo-->
+            <td>117 057 150</td> <!--dados-->
+
+        </tfoot>
+    </table>
+
+    <h2>para fazer um cabeçalho fixo de uma tabela, usamos:</h2> 
+    <h2>Dentro da tag tabela no css usamos uma <mark>position:relative:</mark></h2> 
+    <h2>e usamos o caminho do cabeçalho = <mark>thead > tr> th</mark></h2> 
+    <h2> dentro do cabeçalho da css  / <mark>top: -1px;</mark>  </h2> 
+    <h2> dentro do cabeçalho da css / <mark> position: sticky;</mark>  </h2> 
+    <h2> dentro do cabeçalho da css / <mark>background-color:</mark>  </h2> 
