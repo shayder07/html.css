@@ -9,28 +9,28 @@
     <h1>teste de formulario</h1>
 
     <form action="cadastro.php" method="get">
-        <p>
-            <label for="nome">nome</label>
-            <input type="text" name="nome" id="nome" required maxlength="30" placeholder="nome completo">
-        </p>
-
-        <p>
-            <label for="media">telefone</label>
-            <input type="number" name="media" id="media" placeholder="(99) 9999999"  required >
-        </p>
-
-        <p>
-            <label for="data">data</label>
-            <input type="date" name="data" id="data" value="2024">
-        </p>
-
-        <p>
-            <label for="hora">hora</label>
-            <input type="time" name="hora" id="hora">
-        </p>
-        <p>
-            <input type="submit" value="enviar">
-        </p>
+        <fieldset>
+            <legend>dados pessoais</legend>
+            <p>
+                <label for="nome">nome</label>
+                <input type="text" name="nome" id="nome" required maxlength="30" placeholder="nome completo">
+            </p>
+            <p>
+                <label for="media">telefone</label>
+                <input type="number" name="media" id="media" placeholder="(99) 9999-9999"  required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" >
+            </p>
+            <p>
+                <label for="data">data</label>
+                <input type="date" name="data" id="data" value="2024">
+            </p>
+            <p>
+                <label for="hora">hora</label>
+                <input type="time" name="hora" id="hora">
+            </p>
+            <p>
+                <input type="submit" value="enviar">
+            </p>
+        </fieldset>
     </form>
 
 
