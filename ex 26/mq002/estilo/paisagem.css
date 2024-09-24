@@ -1,3 +1,10 @@
 @charset "UTF-8";
 
 /* aparlho deitado (landscape) */
+
+body{
+    background: url(../imagem/cev-landscape.jpg) ;
+    background-repeat: no-repeat;
+    background-position: left bottom ;
+
+}

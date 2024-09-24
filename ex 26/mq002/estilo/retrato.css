@@ -1,3 +1,9 @@
 @charset "UTF-8";
 
 /* aparlho em pe (portrait) */
+
+body{
+   background: url(../imagem/cev-portrait.jpg);
+   background-position: bottom center ;
+   
+}
